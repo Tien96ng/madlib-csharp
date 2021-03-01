@@ -7,10 +7,10 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center jumbotron">Fill in the blanks to create a story!</h1>
+      <h1 class="text-center jumbotron">Fill in the blanks to create a story for @Model.PathSetter!</h1>
       <div class="row">
         <div class="col-6 offset-3 mb-3">
-          <form action="/zoo" method="post">
+          <form action=@Model.PathSetter method="post">
           <label for="name">A Name</label>
           <input id="name" name="name" type="text" class="form-control">
           <label for="adjective">An Adjective</label>
@@ -31,12 +31,7 @@
           <input id="adverb" name="adverb" type="text" class="form-control">
           <label for="adverb">A Plural Noun</label>
           <input id="nounPlural" name="nounPlural" type="text" class="form-control">
-          <label for="madlibs">Choose a MadLib from the dropdown:</label>
-          <select name="madlibs" id="madlibs" class="form-control">
-            <option value="zoo">Zoo</option>
-            <option value="goosebumps">GooseBumps</option>
-            <option value="puppies">Puppies</option>
-          </select>
+          
           <button type="submit" class="btn btn-success">Go!</button>
           </form>
         </div>
